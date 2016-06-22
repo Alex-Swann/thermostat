@@ -82,7 +82,7 @@ describe('Thermostat', function(){
       thermo.powerSave();
       for (var i = 0; i < 20 ; i++) {
         thermo.increase();
-      };
+      }
       expect(thermo.energyUsage()).toEqual('high-usage');
     });
 
@@ -95,7 +95,7 @@ describe('Thermostat', function(){
       thermo.powerSave();
       for (var i = 0; i < 3 ; i++) {
         thermo.decrease();
-      };
+      }
       expect(thermo.energyUsage()).toEqual('low-usage');
     });
   });
