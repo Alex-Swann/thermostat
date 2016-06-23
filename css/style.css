@@ -9,3 +9,53 @@
 .low-usage {
 	color: green;
 }
+
+html {
+  text-align: center;
+  background: #222;
+  color: #fff;
+}
+html #deg-c,
+html #deg-f {
+  display: inline-block;
+  margin: 30px auto 0 auto;
+  padding: 0 30px 0 30px;
+}
+html #deg-c:hover,
+html #deg-f:hover {
+  cursor: pointer;
+}
+html .thermometer {
+  background: #feec66;
+  height: 250px;
+  width: 40px;
+  border-radius: 30px;
+  margin: -25px auto 0 auto;
+}
+html .bottom {
+  background: #f00;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: -70px auto;
+  border: 5px solid #feec66;
+  display: block-inline;
+}
+html .bottom .temp .data {
+  display: block;
+  margin: 70px 0 10px 0;
+  font-size: 1.8em;
+}
+html .bottom .temperature {
+  position: absolute;
+  background: #f00;
+  height: 0;
+  width: 30px;
+  border-radius: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto 0 auto;
+}
+.selected {
+  color: #feec66;
+}
